@@ -1,0 +1,13 @@
+# QQ导出助手 —— 运行期依赖（Python 3.12 x64）
+# 安装：pip install -r requirements.txt
+
+openpyxl>=3.1
+reportlab>=4.0
+Pillow>=10.0
+Jinja2>=3.1
+cryptography>=42.0
+
+# 可选：仅当「纯 Python 解密」失败时才需要 sqlcipher3 回退。
+# 源码仓库不携带该二进制包；需要时自行安装，或放到 vendor/sqlcipher3_pkg/，
+# 或用环境变量 QQEXPORT_SQLCIPHER_DIR 指向含 sqlcipher3 包的目录。
+# sqlcipher3

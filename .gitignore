@@ -1,0 +1,54 @@
+﻿
+# ── 构建产物（体积大，可重建）────────────────────────────────────────────
+/dist/
+/build/payload/
+/build/_test_payload/
+/build/payload.zip
+/build/_launcher_build.cs
+/build/python-3.12.10-embed-amd64.zip
+/build/e2e/
+/vendor/
+
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ruff_cache/
+.pytest_cache/
+/build/lib/
+/build/bdist*/
+
+# ── 测试临时目录 / 调试输出 ───────────────────────────────────────────────
+tests/_scratch/
+tests/_run_logs/
+tests/key_live_out.txt
+tests/key_live_pid.txt
+/tests/dbg_*.py
+/tests/debug_*.py
+/tests/probe_*.py
+/tests/verify_*.py
+/tests/launch_key_live.py
+_tmp_tests/
+/qqexport/
+/plain/
+/tmp/
+
+# ── 运行产物 ──────────────────────────────────────────────────────────────
+launcher.log
+*.plain.db
+*.plain.db-wal
+*.plain.db-shm
+*.group.db
+*.clear.db
+ui-url.txt
+ui-ready.txt
+
+# ── 编辑器 / 系统 ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
+desktop.ini
